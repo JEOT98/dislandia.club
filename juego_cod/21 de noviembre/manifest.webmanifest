@@ -1,0 +1,12 @@
+{
+  "name": "Dislandia PC",
+  "short_name": "Dislandia PC",
+  "id": "com.example.gamename",
+  "description": "Actividades entretenidas y divertidas para ayudar a niños con problemas de dislalia, desarrollando su pronunciación y acostumbrando su vista y oidos a la apariencia y sonido de las letras y palabras.",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}

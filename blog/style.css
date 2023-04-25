@@ -1,0 +1,155 @@
+.foto-blog{
+    background: url(../img/imagen\ blog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45rem;
+    margin-top: -5%;
+}
+
+.titulo-blog{
+    color: white;
+    font-size: 34px;
+    margin-right: 25%;
+    margin-left: 10%;
+    padding: 3rem;
+    padding-top: 40%;
+}
+
+
+.seccion-texto1 {
+    display: flex;
+    width: 80%;
+    margin: 5% 16%;
+    
+}
+.seccion-texto2 {
+    width: 80%;
+    display: flex;
+    margin: -5% 16% 0% 16%;
+}
+
+.lados {
+    width: 40%;
+    margin: 0.5rem 1rem;
+}
+
+.lados-img1{
+    margin: 0.5rem 1rem;
+    width: 40%;
+}
+.lados-img1 img{
+    width: 100%;
+}
+
+@media screen and (max-width : 1024px){
+
+    .titulo-blog{
+        font-size: 24px;
+        margin-left: 5%;
+        padding-top: 35rem;
+        margin-right: 28%;
+        
+    }
+
+    .seccion-texto1 {
+        display: flex;
+        width: 100%;
+        margin: 5% 5% 0 5%;
+        
+    }
+    .seccion-texto2 {
+        width: 100%;
+        display: flex;
+        margin: 0% 5% 0% 5%;
+    }
+    
+    .lados {
+        width: 40%;
+        margin: 0.5rem 1rem;
+        padding: 0 1.5rem 0 0;
+    }
+
+    .lados p{
+        font-size: 14px;
+    }
+    
+    .lados-img1{
+        margin: .5rem 1rem;
+        width: 40%;
+    }
+
+    .titulo4{
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .foto-blog{
+        height: 30rem;
+        margin-top: -10%;
+    }
+    
+    .titulo-blog{
+        font-size: 20px;
+        margin-left: 0%;
+        padding-top: 21rem;
+        margin-right: 20%;
+        
+    }
+    
+    .lados {
+        margin: 0.5rem .5rem;
+        padding: 0;
+    }
+
+    .lados p{
+        font-size: 13px;
+    }
+    
+    .lados-img1{
+        margin: .5rem 1rem;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .foto-blog{
+        width: 99%;
+        height: 15rem;
+        margin-top: 1%;
+    }
+    
+    .titulo-blog{
+        font-size: 14px;
+        margin-left: 0%;
+        padding-top: 9rem;
+        margin-right: 10%;  
+    }
+
+    .seccion-texto1 {
+        display: inline-block;
+        width: 90%;
+        margin: 5% 5% 0 5%;
+        
+    }
+    .seccion-texto2 {
+        width: 90%;
+        display: inline-block;
+        margin: 0% 5% 0% 5%;
+    }
+    
+    .lados {
+        width: 90%;
+        margin: 1rem 1rem;
+        padding: 0;
+    }
+    
+    .lados p{
+        font-size: 13px;
+    }
+    
+    .lados-img1{
+        width: 90%;
+        margin: 1rem 1rem;
+    }
+}

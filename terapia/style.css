@@ -1,0 +1,179 @@
+.imagen-terapia{
+    width: 100%;
+    height: 30rem;
+    background: url(../img/t-audiolife_Mesa\ de\ trabajo\ 1.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.cuadro-ubicacion{
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 20%;
+    background-color: #14A9BD;
+    border-radius: 16px;
+    color: white;
+}
+
+.map-img{
+    scale: 0.8;
+}
+.map-info{
+    width: 30%;
+    margin: 1rem;
+}
+.map-boton{
+    width: 25%;
+    margin: 1rem;
+}
+
+.cuadro-info{
+    background-color: #14A9BD;
+    border-radius: 16px;
+    margin: 5% 20%;
+    height: auto;
+    background-image: url(../img/terapia\ \(1\).png);
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.info {
+    color: white;
+    margin-right: 50%;
+    padding: 10% 8%;
+}
+
+
+@media screen and (max-width : 1024px){
+    .imagen-terapia{
+        height: 20rem;
+        background-size: cover;
+    }
+
+    .cuadro-ubicacion{
+        margin: 10% 10%;
+    }
+    
+    .map-img{
+        scale: 0.75;
+    }
+    .map-info{
+        width: 35%;
+        margin-left: -.5%;
+    }
+    
+    .map-info h1{
+        font-size: 23px;
+        margin-bottom: 5%;
+    }
+    .map-info p{
+        font-size: 14px;
+    }
+    
+    .map-boton{
+        transform: scale(0.9)
+    }
+
+    .cuadro-info{
+        margin: 10% 10%;
+        height: 22rem;
+    }
+    
+    .info {
+        padding: 8% 10%;
+    }
+
+}
+
+@media screen and (max-width : 800px){
+    .imagen-terapia{
+        height: 19rem;
+    }
+
+    .cuadro-ubicacion{
+        margin: 10% 5%;
+    }
+
+    .cuadro-info{
+        margin: 10% 5%;
+        height: auto;
+    }
+    
+    .info {
+        padding: 8% 10%;
+    }
+    
+    .info h1{
+        font-size: 28px;
+        margin-bottom: 0.8rem;
+    }
+    .info p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width : 600px){
+    .imagen-terapia{
+        height: 10rem;
+    }
+
+    .cuadro-ubicacion{
+        display: inline-block;
+        margin: 10% 10%;
+        height: auto;
+        border-radius: 35px;
+        
+    }
+
+    .map-img{
+        margin-top: 0.5rem;
+        scale: 0.9;
+    }
+    .map-info{
+        width: 100%;
+        margin-left: 5%;
+    }
+    
+    .map-info h1{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .map-info p{
+        font-size: 16px;
+    }
+    
+    .map-boton{
+        transform: scale(1);
+        margin: 5% 20%;
+    }
+
+    .cuadro-info{
+        background-color: #14A9BD;
+        border-radius: 16px;
+        margin: 10% 4%;
+        height: 40rem;
+        background-image: url(../img/terapia\ \(1\).png);
+        background-position-y: 0%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .info {
+        color: white;
+        margin-right: 0%;
+        padding: 120% 8% 0 8%;
+    }
+    
+    .info h1{
+        font-size: 30px;
+        margin-bottom: 0.8rem;
+    }
+    .info p{
+        font-size: 16px;
+    }
+
+}

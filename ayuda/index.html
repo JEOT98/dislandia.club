@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Paytone+One&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/Personaje_feliz.svg" type="image/x-icon">
+    <title>Dislandia</title>
+</head>
+<body>
+
+        <!-- MENU -->
+        <header id="inicio" class="header">
+            <div class="logo-header">
+                <a href="../index.html">
+                <img src="../img/Dislandia-logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu-horizontal">
+                    <li class="ejercicio-b1"><a href="../juegos/index.html"><img src="../img/icon_juegos.svg" width="22px" alt="">Ejercicios</a></li>
+                    <li><a href="#"><img src="../img/icon_padres.svg" width="22px" alt="">Padres</a>
+                        <ul class="menu-vertical">
+                            <li><a href="../blog/index.html">Blog</a></li>
+                            <li><a href="../terapia/index.html">Terapia</a></li>
+                            <li><a href="../ayuda/index.html">Ayuda</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required>
+                <div class="btn">
+                    <i class="fas fa-search icon"></i>
+                  </div>
+            </div>
+        </header>
+            <section id="header">
+        <div class="header">
+          <div class="nav-menu">
+            <div class="nav-lista">
+              <div class="icono">
+                <div class="linea"></div>
+              </div>
+              <ul>
+                <li  class="activo"><a href="/loading/index.html">EJERCICIOs</a></li>
+                <li><a href="/blog/index.html">BLOG</a></li>
+                <li><a href="/terapia/index.html">TERAPIA</a></li>
+                <li><a href="/ayuda/index.html" >AYUDA</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        </section>
+        <div class="contacto-texto">
+            <h1>Cuentanos tu experiencia en Dislandia</h1>
+            <p>En este espacio puedes enviar sugerencias o reclamos.<br>
+                Esperamos que estes disfrutando del sitio, de lo contrario envianos tus dudas. 
+            </p>
+            <div class="personaje-ayuda">
+                <img src="../img/Personaje_feliz.svg" alt="">
+            </div>
+        </div>
+        <div class="formulario">
+            <form action="#" autocomplete="off">
+                <input type="text" name="email" placeholder="  Email" class="campo">
+                <input type="text" name="nombre" placeholder="  Nombre" class="campo">
+                <input type="text" name="asunto" placeholder="  Asunto" class="campo">
+                <textarea name="mansaje" placeholder="  Escribir aqui su mensaje"></textarea>
+                <input type="button" value="Enviar" id="boton-enviar">
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="contenedor-footer">
+                <div class="logo-blanco">
+                    <a href="../index.html"><img src="../img/logo-blanco.svg" alt=""></a>
+                    <p>copyright © Dislandia 2022</p>
+                </div>
+                <div class="contacto-f">
+                    <p>dislandia.club@gmail.com</p>
+                    <a href=""><img src="../img/facebook.svg" alt=""></a>
+                    <a href=""><img src="../img/instagram.svg" alt=""></a>
+                </div>
+                <div class="flecha-f">
+                    <a href="#inicio"><img src="../img/flecha-inicio.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+</body>
+<script>
+const icono = document.querySelector('.header .nav-menu .nav-lista .icono');
+const mobile_menu = document.querySelector('.header .nav-menu .nav-lista ul');
+const menu_item = document.querySelectorAll('.header .nav-menu .nav-lista ul li a');
+const header = document.querySelector('.header.container');
+
+icono.addEventListener('click', () => {
+	icono.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = 'transparent';
+	} else {
+		header.style.backgroundColor = 'transparent';
+	}
+});
+
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		icono.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});
+
+</script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Juego de Cartas",
+  "short_name": "Juego de Cartas",
+  "id": "com.example.gamename",
+  "description": "has pares con las letras que aparecen en las cartas",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
